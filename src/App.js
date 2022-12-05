@@ -18,8 +18,8 @@ function App() {
     return () => clearInterval(interval);
   });
 
-  const handleChange = (e) => setCounterNumber(e.target.value);
-  const hendleIntervalTime = (e) => setIntervalTime(e.target.value);
+  const handleChange = (e) => setCounterNumber(+e.target.value);
+  const hendleIntervalTime = (e) => setIntervalTime(+e.target.value);
 
   const changeСounter = () => {
     if (isAutoClick) {
